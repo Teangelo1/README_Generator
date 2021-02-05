@@ -41,8 +41,12 @@ const generateMarkdown = require('./utils/generateMarkdown')
                 name: "Usage",
                 message: "What are instructions for using this project?"
 
+            },
 
-
+            {
+                type: "input",
+                name: "Collaborators:",
+                message: "Who helped contribute to this project?"
 
             },
 
@@ -57,7 +61,8 @@ const generateMarkdown = require('./utils/generateMarkdown')
 
 
         ]
-    ).then (data => {
+    )
+    .then (data => {
         console.log(data);
         let newReadME = generateMarkdown(data)
         fs.writeFile("README.md", newReadME, (err) =>
