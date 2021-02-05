@@ -42,8 +42,6 @@ function generateMarkdown(data) {
   ## Collaborators:
 
 
-  #Test Instructions:
-
 
 
   ## License:
