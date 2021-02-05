@@ -32,15 +32,38 @@ const generateMarkdown = require('./utils/generateMarkdown')
                 message: "What steps are required to install your project?"
 
 
+
+
+            },
+
+            {
+                type: "input",
+                name: "Usage",
+                message: "What are instructions for using this project?"
+
+
+
+
+            },
+
+            {
+                type: "checkbox",
+                name: "License",
+                choices: ["None", "Apache", "MIT", "Eclipse"]
+
             }
 
 
 
-        ]
-    )
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+        ]
+    ).then (data => {
+        console.log(data);
+        let newReadME = generateMarkdown(data)
+        fs.writeFile("README.md", newReadME, (err) =>
+        err ? console.error(err) : console.log('Success!'));
+    })
+
 
 // TODO: Create a function to initialize app
 function init() { }
