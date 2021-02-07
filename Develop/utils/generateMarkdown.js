@@ -28,10 +28,7 @@ function generateMarkdown(data) {
   ## Description:
   ${data.description}
 
-  ## Demo of project: 
-
-
-  ## Table of Contents
+   ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
