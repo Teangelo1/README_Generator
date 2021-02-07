@@ -42,8 +42,8 @@ function generateMarkdown(data) {
   ${data.usage}
 
 
-  ## Collaborators:
-  ${data.collaborators}
+  ## Contributors:
+  ${data.contributors}
 
   ## License:
   ${renderLicenseLink(data.license)}
