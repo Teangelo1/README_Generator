@@ -15,7 +15,7 @@ function generateMarkdown(data) {
   return `
   # Title:
   ${data.title}
-
+  
   ## Description:
   ${data.description}
 
@@ -25,28 +25,20 @@ function generateMarkdown(data) {
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
-
-
   
-
   ## Installation:
   ${data.installation}
 
 
-
   ## Usage:
-  ${data.Usage}
-
+  ${data.usage}
 
 
   ## Collaborators:
-
-
-
+  ${data.collaborators}
 
   ## License:
   ${data.license}
-
 `;
 }
 

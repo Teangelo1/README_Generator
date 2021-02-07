@@ -45,14 +45,14 @@ const generateMarkdown = require('./utils/generateMarkdown')
 
             {
                 type: "input",
-                name: "Collaborators:",
+                name: "collaborators:",
                 message: "Who helped contribute to this project?"
 
             },
 
             {
                 type: "checkbox",
-                name: "License",
+                name: "license",
                 choices: ["None", "Apache", "MIT", "Eclipse"]
 
             }
@@ -66,7 +66,7 @@ const generateMarkdown = require('./utils/generateMarkdown')
         console.log(data);
         let newReadME = generateMarkdown(data)
         fs.writeFile("README.md", newReadME, (err) =>
-        err ? console.error(err) : console.log('Success!'));
+        err ? console.error(err) : console.log('Your README has been created!'));
     })
 
 
