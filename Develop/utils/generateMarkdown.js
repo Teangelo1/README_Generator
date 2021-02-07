@@ -5,7 +5,12 @@ function renderLicenseBadge(license) {}
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  
+  if (license === "Apache"){
+    return "Apache has worked"
+
+  }
+
+
 }
 
 // TODO: Create a function that returns the license section of README
@@ -39,7 +44,13 @@ function generateMarkdown(data) {
   ${data.collaborators}
 
   ## License:
-  ${data.license}
+  ${renderLicenseLink(data.license)}
+
+  ## Github Username: ${data.github}
+
+  ## Email: ${data.email}
+
+
 `;
 }
 
