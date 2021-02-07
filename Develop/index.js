@@ -38,7 +38,7 @@ const generateMarkdown = require('./utils/generateMarkdown')
 
             {
                 type: "input",
-                name: "Usage",
+                name: "usage",
                 message: "What are instructions for using this project?"
 
             },
@@ -51,7 +51,7 @@ const generateMarkdown = require('./utils/generateMarkdown')
             },
 
             {
-                type: "checkbox",
+                type: "list",
                 name: "license",
                 choices: ["None", "Apache", "MIT", "Eclipse"]
 
