@@ -2,7 +2,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require('./utils/generateMarkdown')
-// const validator = require("validator")
 
 // TODO: Create an array of questions for user input
 
@@ -28,9 +27,6 @@ const questions = [
         type: "input",
         name: "installation",
         message: "What steps are required to install your project?"
-
-
-
 
     },
 
@@ -60,7 +56,6 @@ const questions = [
         type: "input",
         name: "github",
         message: "What is your Github user name?"
-
     },
 
     {
