@@ -20,6 +20,7 @@ ONCE the user enters this their, It will be placed in the corresponding section 
 ```
 
 # Demonstration: 
+![](Demonstration/README.gif)
 &nbsp;
 
 
